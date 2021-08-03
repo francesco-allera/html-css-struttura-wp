@@ -1,0 +1,55 @@
+/* ----- General Settings ----- */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+header {
+   height: 150px;
+   background: yellow;
+}
+main {
+   margin: 10px 0;
+}
+footer {
+   height: 75px;
+   background: lightblue;
+}
+
+/* ----- Utility Classes ----- */
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+.clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+.clearfix > * {
+   float: left;
+}
+
+/* ----- Items in Main ----- */
+.side-left, .side-right {
+   width: 27%;
+}
+.side-center {
+   width: 46%;
+   padding: 0 20px;
+}
+:is(.side-left, .side-right) > div {
+   background: plum;
+}
+.side-center > div {
+   height: 450px;
+   background: purple;
+}
+.side-left > div {
+   height: 350px;
+}
+.side-right > div {
+   height: 200px;
+   margin-bottom: 20px;
+}

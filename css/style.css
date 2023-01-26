@@ -1,0 +1,61 @@
+/* common settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix > * {
+    float: left;
+}
+.plum {
+    background-color: plum;
+}
+.purple {
+    background-color: purple;
+}
+
+/* header */
+header {
+    height: 150px;
+    background-color: yellow;
+}
+
+/* main */
+main {
+    margin: 1rem 0;
+}
+.center {
+    width: calc(45% + 2.5rem);
+    padding: 0 2.5rem;
+}
+.left, .right {
+    width: calc((100% - 45% - 2.5rem) / 2);
+}
+.center > * {
+    height: 500px;
+}
+.left > * {
+    height: 350px;
+}
+.right > *{
+    height: 200px;
+}
+main > * > *:not(:last-child) {
+    margin-bottom: 1.25rem;
+}
+
+/* footer */
+footer {
+    background-color: lightblue;
+    height: 100px;
+}
